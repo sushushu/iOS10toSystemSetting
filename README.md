@@ -1,5 +1,5 @@
 
-## iOS 10又可以跳转到系统设置页面了 = = ，是国外大神先发展的。
+## ############## iOS 10又可以跳转到系统设置页面了 = = ，是国外大神先发现的。
 
 ```objectivec	
     NSURL *url = [NSURL URLWithString:@"APP-Prefs:root=WIFI"];
