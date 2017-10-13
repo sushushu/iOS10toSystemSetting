@@ -1,3 +1,13 @@
+
+## iOS 10又可以跳转到系统设置页面了 = = ，是国外大神先发展的。
+
+```objectivec	
+    NSURL *url = [NSURL URLWithString:@"APP-Prefs:root=WIFI"];
+        if ([[UIApplication sharedApplication] canOpenURL:url]) {
+            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
+        }
+```
+
 ## 0、首先说明iOS 10在应用自身上（除非通知栏）已经不允许任何跳转到系统设置的行为了。下面是关于跳转系统设置的几点说明。
 
 ## 1、iOS 9 8 7 可正常跳转
